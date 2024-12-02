@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProrlcsX Studio</title>
+    <link rel="stylesheet" href="prorlcs.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>GamingX Studio</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h2>Welcome to GamingX Studio</h2>
+            <p>Innovating the gaming world, one game at a time.</p>
+            <button onclick="scrollToSection('games')">Discover Our Games</button>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <h2>Our Latest Games</h2>
+        <div class="game-cards">
+            <div class="game-card">
+                <img src="game1.jpg" alt="Game 1">
+                <h3>Warrior's Quest</h3>
+                <p>An epic adventure to conquer ancient lands.</p>
+            </div>
+            <div class="game-card">
+                <img src="game2.jpg" alt="Game 2">
+                <h3>Space Raiders</h3>
+                <p>Defend the galaxy from alien invaders.</p>
+            </div>
+            <div class="game-card">
+                <img src="game3.jpg" alt="Game 3">
+                <h3>Zombie Outbreak</h3>
+                <p>Survive the zombie apocalypse in this intense action game.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About GamingX Studio</h2>
+        <p>GamingX Studio is a cutting-edge game development company dedicated to creating immersive and innovative gaming experiences. We pride ourselves on pushing the boundaries of creativity and technology to bring you the most thrilling games on the market.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GamingX Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="prorlcs.js"></script>
+</body>
+</html>
+
